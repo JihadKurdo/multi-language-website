@@ -15,13 +15,13 @@ source = [
 
 const lang = localStorage.getItem("lang")
 
-if (lang == "eng"){
+if (lang == "eng" || lang == null){
 	for(i = 0; i < source.length; i++){
 		target[i].textContent = source[i].eng
 	}
 	currentLanguage.textContent = "English"
 }
-else if (lang == "es" || lang == null){
+else if (lang == "es"){
 	for(i = 0; i < source.length; i++){
 		target[i].textContent = source[i].es
 	}
@@ -29,10 +29,10 @@ else if (lang == "es" || lang == null){
 }
 
 btn.addEventListener("click", () => {
-	if (lang == "es" || lang == null){
+	if (lang == "es"){
 		localStorage.setItem("lang","eng")
 	}
-	else if (lang == "eng"){
+	else if (lang == "eng" || lang == null){
 		localStorage.setItem("lang","es")
 	}
 	window.location = ""
