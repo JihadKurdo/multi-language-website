@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+:root{
+    --primary: blue;
+    --secondary:#eee
+}
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+    font-family: poppins;
+    line-height: 1
+}
+
+*:hover,
+*:focus-visible,
+*:focus{
+    outline: none
+}
+
+::selection {
+    color: var(--secondary);
+    background-color: var(--primary)
+}
+
+body,html {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding:0;
+    margin:0;
+    font-weight:bold;
+    color: var(--secondary);
+    background:var(--secondary);
+    scroll-behavior: smooth;
+    scrollbar-color: var(--primary) #111;
+    scrollbar-width: thin
+}
+
+.box{
+	width: 50vh;
+	min-height: 50vh;
+	background: var(--secondary);
+	border-radius: 10px;
+	border: 1px solid #80808080;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-direction: column
+}
+
+.box .text{
+	font-size: 35px;
+	color: var(--primary)
+}
+
+.box button{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 25px;
+	padding: 10px 15px;
+	color: var(--secondary);
+	background: var(--primary);
+	border-radius: 100px;
+	cursor: pointer;
+	border: 3px solid transparent
+}
+
+.box button:hover,
+.box button:focus-visible{
+	color: var(--primary);
+	background: var(--secondary);
+	border: 3px solid var(--primary)
+}
