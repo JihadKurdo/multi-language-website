@@ -1,5 +1,6 @@
 
 var btn = document.querySelector("button"),
+currentLanguage = document.querySelector("[data-current]"),
 target = document.querySelectorAll("[data-target]"),
 source = [
 	{
@@ -18,11 +19,13 @@ if (lang == "eng"){
 	for(i = 0; i < source.length; i++){
 		target[i].textContent = source[i].eng
 	}
+	currentLanguage.textContent = "English"
 }
 else if (lang == "es" || lang == null){
 	for(i = 0; i < source.length; i++){
 		target[i].textContent = source[i].es
 	}
+	currentLanguage.textContent = "Spanish"
 }
 
 btn.addEventListener("click", () => {

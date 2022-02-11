@@ -83,3 +83,14 @@ body,html {
 	background: var(--secondary);
 	border: 3px solid var(--primary)
 }
+
+.currentLanguage{
+	position: fixed;
+	bottom: calc(12.5vh - 15px);
+	left: 50%;
+	color: var(--secondary);
+	background: var(--primary);
+	transform: translateX(-50%);
+	padding: 10px 15px;
+	border-radius: 100px;
+}
