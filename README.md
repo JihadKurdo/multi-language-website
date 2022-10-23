@@ -6,7 +6,7 @@ Here is a quick way to make your website have Multi Language Support.
 
 
 
-### 🔗 Jihad Kurdo
+### Jihad Kurdo 🔗
 [![portfolio](https://img.shields.io/badge/my_portfolio-FF4B2B?style=for-the-badge&logo=ko-fi&logoColor=white)](https://jihad.work)
 
 [![instagram](https://img.shields.io/badge/instagram-0A66C2?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/9jihad6)
